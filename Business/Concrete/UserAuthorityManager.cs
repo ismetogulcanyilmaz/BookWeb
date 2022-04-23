@@ -16,7 +16,6 @@ namespace Business.Concrete
     public class UserAuthorityManager : IUserAuthorityService
     {
         private IUserAuthorityDal _userAuthorityDal;
-
         public UserAuthorityManager()
         {
             _userAuthorityDal = new EfUserAuthorityDal();
@@ -46,7 +45,7 @@ namespace Business.Concrete
 
         public IDataResult<UserAuthority> GetById(int id)
         {
-            var result = _userAuthorityDal.Get(b => b.Id == id);
+            var result = _userAuthorityDal.Get(c => c.Id == id);
             if (result == null)
             {
                 return new ErrorDataResult<UserAuthority>();
@@ -56,7 +55,15 @@ namespace Business.Concrete
 
         public IDataResult<UserAuthoritiesDto> GetUserAndUserAuthorities(User user, List<AuthorityDto> authorities)
         {
-            throw new NotImplementedException();
+            UserAuthoritiesDto userAuthoritiesDto = new UserAuthoritiesDto();
+            userAuthoritiesDto.User = user;
+            userAuthoritiesDto.Authorities = authorities;
+
+            if (userAuthoritiesDto.User == null || userAuthoritiesDto.Authorities == null)
+            {
+                return new ErrorDataResult<UserAuthoritiesDto>(Messages.UserOrAuthortiesAreNull);
+            }
+            return new SuccessDataResult<UserAuthoritiesDto>(userAuthoritiesDto);
         }
 
         public IResult Update(UserAuthority userAuthority)

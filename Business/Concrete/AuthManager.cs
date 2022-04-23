@@ -88,6 +88,7 @@ namespace Business.Concrete
 
         public IResult UserExists(string email)
         {
+            // burası düzeltilecek.
             var userExist = _userService.GetByMail(email);
             if (userExist == null)
             {
@@ -96,12 +97,12 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IDataResult<User> UserCheck(string email, UserSecurityQuestionDto userSecurityQuestionDto, UserNewPasswordDto userNewPasswordDto)
+        public IDataResult<User> UserCheck(UserSecurityQuestionDto userSecurityQuestionDto, UserNewPasswordDto userNewPasswordDto)
         {
-            var userToCheck = _userService.GetByMail(email).Data;
-            if (userToCheck != null)
+            var userToCheck = _userService.GetByMail(userSecurityQuestionDto.UserEmail).Data;
+            if (userToCheck == null)
             {
-                return new ErrorDataResult<User>(Messages.UserAlreadyExist);
+                return new ErrorDataResult<User>(Messages.UserNotFound);
             }
 
             BusinessRules.Run(
@@ -110,7 +111,14 @@ namespace Business.Concrete
 
             userToCheck.Password = userNewPasswordDto.Password;
 
+            _userService.Update(userToCheck);
+
             return new SuccessDataResult<User>(userToCheck);
+        }
+        public IResult AddUserAuthority(UserAuthority userAuthority)
+        {
+            _userAuthorityService.Add(userAuthority);
+            return new SuccessResult();
         }
 
         private IResult SecurityAnswer(User user, string securityAnswer)
@@ -128,12 +136,6 @@ namespace Business.Concrete
             {
                 return new ErrorResult(Messages.PasswordError);
             }
-            return new SuccessResult();
-        }
-
-        public IResult AddUserAuthority(UserAuthority userAuthority)
-        {
-            _userAuthorityService.Add(userAuthority);
             return new SuccessResult();
         }
     }

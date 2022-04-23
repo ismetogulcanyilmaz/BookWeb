@@ -44,6 +44,7 @@
     <Compile Include="Concrete\Book.cs" />
     <Compile Include="Concrete\BookCategory.cs" />
     <Compile Include="Concrete\BookOrder.cs" />
+    <Compile Include="Concrete\MenuAdmin.cs" />
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="DTOs\AuthorityDto.cs" />
     <Compile Include="DTOs\UserAuthoritiesDto.cs" />

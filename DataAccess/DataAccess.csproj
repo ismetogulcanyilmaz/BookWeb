@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IMenuAdminDal.cs" />
     <Compile Include="Abstract\ISecurityQuestionDal.cs" />
     <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Abstract\IUserAuthorityDal.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Abstract\IBookDal.cs" />
     <Compile Include="Abstract\IBookCategoryDal.cs" />
     <Compile Include="Abstract\IAuthorityDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMenuAdminDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfSecurityQuestionDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfUserDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfUserAuthorityDal.cs" />

@@ -103,6 +103,7 @@
     <Content Include="assets\js\morris\morris.js" />
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="css\style.css" />
+    <Content Include="Global.asax" />
     <Content Include="image\banner-bg.jpg" />
     <Content Include="image\blog-1.jpg" />
     <Content Include="image\blog-2.jpg" />
@@ -135,6 +136,12 @@
     <Content Include="image\worldmap.png" />
     <Content Include="index.html" />
     <Content Include="js\script.js" />
+    <Content Include="LoginForm\bg.jpg" />
+    <Content Include="LoginForm\index.html" />
+    <Content Include="LoginForm\LoginPage.aspx" />
+    <Content Include="LoginForm\Screenshot for mobile.png" />
+    <Content Include="LoginForm\Screenshot for pc.png" />
+    <Content Include="LoginForm\style.css" />
     <Content Include="Site\SiteBook.aspx" />
     <Content Include="Site\SiteBookCategory.aspx" />
     <Content Include="Web.config" />
@@ -202,6 +209,16 @@
     </Compile>
     <Compile Include="AdminWeb\AdminUserAuthority.aspx.designer.cs">
       <DependentUpon>AdminUserAuthority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site\Site.Master.cs">
