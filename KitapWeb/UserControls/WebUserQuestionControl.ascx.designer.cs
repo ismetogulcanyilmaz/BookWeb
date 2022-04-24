@@ -11,34 +11,52 @@ namespace KitapWeb.UserControls
 {
 
 
-    public partial class WebForgotPasswordUserControl
+    public partial class WebUserQuestionControl
     {
 
         /// <summary>
-        /// tbx_Email denetimi.
+        /// Lbl_UserEmail denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbx_Email;
+        protected global::System.Web.UI.WebControls.Label Lbl_UserEmail;
 
         /// <summary>
-        /// Btn_ForgotPassword denetimi.
+        /// Lbl_UserQuestion denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_ForgotPassword;
+        protected global::System.Web.UI.WebControls.Label Lbl_UserQuestion;
 
         /// <summary>
-        /// Lbl_EmailError denetimi.
+        /// tbx_UserAnswer denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_EmailError;
+        protected global::System.Web.UI.WebControls.TextBox tbx_UserAnswer;
+
+        /// <summary>
+        /// Btn_UserQuestionPage denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_UserQuestionPage;
+
+        /// <summary>
+        /// Lbl_UserQuestionPage denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lbl_UserQuestionPage;
     }
 }

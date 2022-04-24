@@ -11,7 +11,7 @@ namespace KitapWeb.ForgotPassword
 {
 
 
-    public partial class ForgotPassword
+    public partial class NewPassword
     {
 
         /// <summary>
@@ -24,12 +24,12 @@ namespace KitapWeb.ForgotPassword
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// WebForgotPasswordUserControl denetimi.
+        /// WebUserNewPasswordControl denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::KitapWeb.UserControls.WebForgotPasswordUserControl WebForgotPasswordUserControl;
+        protected global::KitapWeb.UserControls.WebUserNewPasswordControl WebUserNewPasswordControl;
     }
 }

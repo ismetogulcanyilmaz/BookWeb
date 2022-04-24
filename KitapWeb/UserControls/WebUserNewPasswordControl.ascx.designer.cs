@@ -11,34 +11,43 @@ namespace KitapWeb.UserControls
 {
 
 
-    public partial class WebForgotPasswordUserControl
+    public partial class WebUserNewPasswordControl
     {
 
         /// <summary>
-        /// tbx_Email denetimi.
+        /// tbx_NewPassword denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbx_Email;
+        protected global::System.Web.UI.WebControls.TextBox tbx_NewPassword;
 
         /// <summary>
-        /// Btn_ForgotPassword denetimi.
+        /// tbx_PasswordCheck denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_ForgotPassword;
+        protected global::System.Web.UI.WebControls.TextBox tbx_PasswordCheck;
 
         /// <summary>
-        /// Lbl_EmailError denetimi.
+        /// Btn_NewPasswordPage denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lbl_EmailError;
+        protected global::System.Web.UI.WebControls.Button Btn_NewPasswordPage;
+
+        /// <summary>
+        /// Lbl_NewPasswordPage denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lbl_NewPasswordPage;
     }
 }

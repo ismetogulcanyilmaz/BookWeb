@@ -32,7 +32,7 @@
           <div class="field">
             <asp:Button ID="Btn_SignInPage" OnClick="Btn_SignInPage_Click" runat="server" Text="Sign In" />
           </div>
-          <asp:Label ID="Lbl_SignIn" runat="server" Text="Label"></asp:Label>
+          <asp:Label ID="Lbl_SignIn" runat="server" Text=""></asp:Label>
         </div> 
       </div> 
     </div> 

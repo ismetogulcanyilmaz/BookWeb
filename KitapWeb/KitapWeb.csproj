@@ -82,6 +82,26 @@
     <Content Include="AdminWeb\AdminDashboard.aspx" />
     <Content Include="AdminWeb\AdminUser.aspx" />
     <Content Include="AdminWeb\AdminUserAuthority.aspx" />
+    <Content Include="AdminWeb\assets\css\bootstrap.css" />
+    <Content Include="AdminWeb\assets\css\custom-styles.css" />
+    <Content Include="AdminWeb\assets\css\font-awesome.css" />
+    <Content Include="AdminWeb\assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AdminWeb\assets\js\bootstrap.min.js" />
+    <Content Include="AdminWeb\assets\js\chart-data.js" />
+    <Content Include="AdminWeb\assets\js\chart.min.js" />
+    <Content Include="AdminWeb\assets\js\custom-scripts.js" />
+    <Content Include="AdminWeb\assets\js\custom.js" />
+    <Content Include="AdminWeb\assets\js\dataTables\datatables.bootstrap.css" />
+    <Content Include="AdminWeb\assets\js\dataTables\datatables.bootstrap.js" />
+    <Content Include="AdminWeb\assets\js\dataTables\jquery.datatables.js" />
+    <Content Include="AdminWeb\assets\js\easypiechart-data.js" />
+    <Content Include="AdminWeb\assets\js\easypiechart.js" />
+    <Content Include="AdminWeb\assets\js\jquery-1.10.2.js" />
+    <Content Include="AdminWeb\assets\js\jquery.metismenu.js" />
+    <Content Include="AdminWeb\assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="AdminWeb\assets\js\morris\morris.js" />
+    <Content Include="AdminWeb\assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\custom-styles.css" />
     <Content Include="assets\css\font-awesome.css" />
@@ -104,6 +124,8 @@
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="css\style.css" />
     <Content Include="ForgotPassword\ForgotPassword.aspx" />
+    <Content Include="ForgotPassword\NewPassword.aspx" />
+    <Content Include="ForgotPassword\UserQuestion.aspx" />
     <Content Include="Global.asax" />
     <Content Include="image\banner-bg.jpg" />
     <Content Include="image\blog-1.jpg" />
@@ -146,9 +168,12 @@
     <Content Include="SignInForm\SignInPage.aspx" />
     <Content Include="Site\SiteBook.aspx" />
     <Content Include="Site\SiteBookCategory.aspx" />
+    <Content Include="UserControls\WebAdminMenuControl.ascx" />
     <Content Include="UserControls\WebForgotPasswordUserControl.ascx" />
     <Content Include="UserControls\WebLoginUserControl.ascx" />
     <Content Include="UserControls\WebSignInUserControl.ascx" />
+    <Content Include="UserControls\WebUserNewPasswordControl.ascx" />
+    <Content Include="UserControls\WebUserQuestionControl.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +247,20 @@
     <Compile Include="ForgotPassword\ForgotPassword.aspx.designer.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword\NewPassword.aspx.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword\NewPassword.aspx.designer.cs">
+      <DependentUpon>NewPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword\UserQuestion.aspx.cs">
+      <DependentUpon>UserQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword\UserQuestion.aspx.designer.cs">
+      <DependentUpon>UserQuestion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -261,6 +300,13 @@
     <Compile Include="Site\SiteBookCategory.aspx.designer.cs">
       <DependentUpon>SiteBookCategory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\WebAdminMenuControl.ascx.cs">
+      <DependentUpon>WebAdminMenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebAdminMenuControl.ascx.designer.cs">
+      <DependentUpon>WebAdminMenuControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\WebForgotPasswordUserControl.ascx.cs">
       <DependentUpon>WebForgotPasswordUserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +328,20 @@
     <Compile Include="UserControls\WebSignInUserControl.ascx.designer.cs">
       <DependentUpon>WebSignInUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\WebUserNewPasswordControl.ascx.cs">
+      <DependentUpon>WebUserNewPasswordControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebUserNewPasswordControl.ascx.designer.cs">
+      <DependentUpon>WebUserNewPasswordControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebUserQuestionControl.ascx.cs">
+      <DependentUpon>WebUserQuestionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebUserQuestionControl.ascx.designer.cs">
+      <DependentUpon>WebUserQuestionControl.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
@@ -293,6 +353,14 @@
     <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="assets\fonts\glyphicons-halflings-regulard41d.eot" />
     <Content Include="AdminWeb\Admin.Master" />
+    <Content Include="AdminWeb\assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="AdminWeb\assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="AdminWeb\assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="AdminWeb\assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regulard41d.eot" />
     <None Include="packages.config" />
     <Content Include="Site\Site.Master" />
     <None Include="Web.Debug.config">

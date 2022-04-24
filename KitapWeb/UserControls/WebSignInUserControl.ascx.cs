@@ -69,7 +69,7 @@ namespace KitapWeb.UserControls
             if (result.Success)
             {
                 Lbl_SignIn.Text = result.Message;
-                Response.Redirect("/LoginForm/LoginPage.aspx");
+                Response.Redirect("/LoginForm/LoginPage");
             }
             
             Lbl_SignIn.Text = result.Message;

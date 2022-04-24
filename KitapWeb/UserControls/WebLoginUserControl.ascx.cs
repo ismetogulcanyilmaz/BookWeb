@@ -36,18 +36,18 @@ namespace KitapWeb.UserControls
                 }
 
                 Session["Authorities"] = authorities;
-                Response.Redirect("/Site/SiteBook.aspx");
+                Response.Redirect("/Site/SiteBook");
             }
             Lbl_LoginPage.Text = userLogin.Message;
         }
         protected void LnkBtn_ForgotPassword_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/WebPage.aspx");
+            Response.Redirect("/ForgotPassword/ForgotPassword");
         }
 
         protected void LnkBtn_SignUp_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/WebPage.aspx");
+            Response.Redirect("/SignInForm/SignInPage");
         }
     }
 }

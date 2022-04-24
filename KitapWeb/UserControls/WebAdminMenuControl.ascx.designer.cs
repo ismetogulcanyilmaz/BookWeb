@@ -7,29 +7,20 @@
 // </otomatik olarak oluşturulmuş>
 //------------------------------------------------------------------------------
 
-namespace KitapWeb.ForgotPassword
+namespace KitapWeb.UserControls
 {
 
 
-    public partial class ForgotPassword
+    public partial class WebAdminMenuControl
     {
 
         /// <summary>
-        /// form1 denetimi.
+        /// Ltl_Menu denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// WebForgotPasswordUserControl denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik olarak oluşturulan alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::KitapWeb.UserControls.WebForgotPasswordUserControl WebForgotPasswordUserControl;
+        protected global::System.Web.UI.WebControls.Literal Ltl_Menu;
     }
 }

@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ForgotPassword.aspx.cs" Inherits="KitapWeb.ForgotPassword.ForgotPassword" %>
 
+<%@ Register Src="~/UserControls/WebForgotPasswordUserControl.ascx" TagPrefix="uc1" TagName="WebForgotPasswordUserControl" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +14,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div> x
+        <div> 
+            <uc1:WebForgotPasswordUserControl runat="server" id="WebForgotPasswordUserControl" />
         </div>
     </form>
                 <script>
