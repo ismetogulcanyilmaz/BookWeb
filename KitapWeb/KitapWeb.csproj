@@ -103,6 +103,7 @@
     <Content Include="assets\js\morris\morris.js" />
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="css\style.css" />
+    <Content Include="ForgotPassword\ForgotPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="image\banner-bg.jpg" />
     <Content Include="image\blog-1.jpg" />
@@ -142,8 +143,12 @@
     <Content Include="LoginForm\Screenshot for mobile.png" />
     <Content Include="LoginForm\Screenshot for pc.png" />
     <Content Include="LoginForm\style.css" />
+    <Content Include="SignInForm\SignInPage.aspx" />
     <Content Include="Site\SiteBook.aspx" />
     <Content Include="Site\SiteBookCategory.aspx" />
+    <Content Include="UserControls\WebForgotPasswordUserControl.ascx" />
+    <Content Include="UserControls\WebLoginUserControl.ascx" />
+    <Content Include="UserControls\WebSignInUserControl.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +215,13 @@
     <Compile Include="AdminWeb\AdminUserAuthority.aspx.designer.cs">
       <DependentUpon>AdminUserAuthority.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,6 +233,13 @@
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignInForm\SignInPage.aspx.cs">
+      <DependentUpon>SignInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignInForm\SignInPage.aspx.designer.cs">
+      <DependentUpon>SignInPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -241,6 +260,27 @@
     </Compile>
     <Compile Include="Site\SiteBookCategory.aspx.designer.cs">
       <DependentUpon>SiteBookCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebForgotPasswordUserControl.ascx.cs">
+      <DependentUpon>WebForgotPasswordUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebForgotPasswordUserControl.ascx.designer.cs">
+      <DependentUpon>WebForgotPasswordUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebLoginUserControl.ascx.cs">
+      <DependentUpon>WebLoginUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebLoginUserControl.ascx.designer.cs">
+      <DependentUpon>WebLoginUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebSignInUserControl.ascx.cs">
+      <DependentUpon>WebSignInUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebSignInUserControl.ascx.designer.cs">
+      <DependentUpon>WebSignInUserControl.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

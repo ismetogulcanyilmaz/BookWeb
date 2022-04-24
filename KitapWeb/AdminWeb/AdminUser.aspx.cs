@@ -81,11 +81,10 @@ namespace KitapWeb.AdminWeb
             User user = new User();
             user.FirstName = tbx_AddFirstName.Text;
             user.LastName = tbx_AddLastName.Text;
-            user.Email = tbx_UpdateEmail.Text;
-            user.Password = tbx_UpdatePassword.Text;
-            user.SecurityQuestionId = Convert.ToInt32(tbx_UpdateSecurityQuestionId.Text);
-            user.SecurityQuestionAnswer = tbx_UpdateSecurityQuestionAnswer.Text;
-            user.Status =Convert.ToBoolean(tbx_UpdateStatus.Text);
+            user.Email = tbx_AddEmail.Text;
+            user.Password = tbx_AddPassword.Text;
+            user.SecurityQuestionId = Convert.ToInt32(tbx_AddSecurityQuestionId.Text);
+            user.SecurityQuestionAnswer = tbx_AddSecurityQuestionAnswer.Text;
 
             _userService.Add(user);
             GetAll();

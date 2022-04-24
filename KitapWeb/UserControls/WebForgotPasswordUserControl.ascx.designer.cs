@@ -7,29 +7,29 @@
 // </otomatik olarak oluşturulmuş>
 //------------------------------------------------------------------------------
 
-namespace KitapWeb.LoginForm
+namespace KitapWeb.UserControls
 {
 
 
-    public partial class LoginPage
+    public partial class WebForgotPasswordUserControl
     {
 
         /// <summary>
-        /// form1 denetimi.
+        /// tbx_Email denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox tbx_Email;
 
         /// <summary>
-        /// WebLoginUserControl denetimi.
+        /// Btn_ForgotPassword denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::KitapWeb.UserControls.WebLoginUserControl WebLoginUserControl;
+        protected global::System.Web.UI.WebControls.Button Btn_ForgotPassword;
     }
 }

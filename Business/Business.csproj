@@ -56,7 +56,7 @@
     <Compile Include="Concrete\BookManager.cs" />
     <Compile Include="Concrete\BookOrderManager.cs" />
     <Compile Include="Concrete\AuthManager.cs" />
-    <Compile Include="Concrete\Class1.cs" />
+    <Compile Include="Concrete\MenuAdminManager.cs" />
     <Compile Include="Concrete\SecurityQuestionManager.cs" />
     <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="Concrete\UserAuthorityManager.cs" />

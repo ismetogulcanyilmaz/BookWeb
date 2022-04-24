@@ -42,9 +42,6 @@
             <label for="exampleFormControlInput1">SecurityQuestionId</label>
             <asp:TextBox ID="tbx_AddSecurityQuestionId" CssClass="form-control" runat="server"></asp:TextBox>
 
-            <label for="exampleFormControlInput1">Status</label>
-            <asp:TextBox ID="tbx_AddStatus" CssClass="form-control" runat="server"></asp:TextBox>
-
             <label for="exampleFormControlInput1">SecurityQuestionAnswer</label>
             <asp:TextBox ID="tbx_AddSecurityQuestionAnswer" CssClass="form-control" runat="server"></asp:TextBox>
 

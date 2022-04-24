@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="KitapWeb.LoginForm.LoginPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignInPage.aspx.cs" Inherits="KitapWeb.SignInForm.SignInPage" %>
 
-<%@ Register Src="~/UserControls/WebLoginUserControl.ascx" TagPrefix="uc1" TagName="WebLoginUserControl" %>
+<%@ Register Src="~/UserControls/WebSignInUserControl.ascx" TagPrefix="uc1" TagName="WebSignInUserControl" %>
 
 
 <!DOCTYPE html>
@@ -9,14 +9,14 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-       <link rel="stylesheet" href="/LoginForm/style.css"/>
+           <link rel="stylesheet" href="/LoginForm/style.css"/>
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <uc1:WebLoginUserControl runat="server" ID="WebLoginUserControl" />
+        <uc1:WebSignInUserControl runat="server" id="WebSignInUserControl" />
     </form>
-          <script>
+             <script>
               const pass_field = document.querySelector('.pass-key');
               const showBtn = document.querySelector('.show');
               showBtn.addEventListener('click', function () {
@@ -32,5 +32,4 @@
               });
     </script>
 </body>
- 
 </html>

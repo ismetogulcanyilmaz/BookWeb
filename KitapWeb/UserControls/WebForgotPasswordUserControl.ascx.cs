@@ -1,20 +1,17 @@
-﻿using Business.Abstract;
-using Business.Concrete;
-using Entities.DTOs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace KitapWeb.LoginForm
+namespace KitapWeb.UserControls
 {
-    public partial class LoginPage : System.Web.UI.Page
+    public partial class WebForgotPasswordUserControl : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

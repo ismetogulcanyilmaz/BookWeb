@@ -45,7 +45,7 @@ namespace Business.Concrete
 
         public IDataResult<MenuAdmin> GetById(int id)
         {
-            var result = _menuAdminDal.Get(a => a.Id == id);
+            var result = _menuAdminDal.Get(m => m.Id == id);
             if (result == null)
             {
                 return new ErrorDataResult<MenuAdmin>();

@@ -7,11 +7,11 @@
 // </otomatik olarak oluşturulmuş>
 //------------------------------------------------------------------------------
 
-namespace KitapWeb.LoginForm
+namespace KitapWeb.ForgotPassword
 {
 
 
-    public partial class LoginPage
+    public partial class ForgotPassword
     {
 
         /// <summary>
@@ -22,14 +22,5 @@ namespace KitapWeb.LoginForm
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// WebLoginUserControl denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik olarak oluşturulan alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::KitapWeb.UserControls.WebLoginUserControl WebLoginUserControl;
     }
 }
