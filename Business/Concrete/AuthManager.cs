@@ -55,9 +55,9 @@ namespace Business.Concrete
 
             User user = new User
             {
-                Email = userForRegisterDto.Email,
                 FirstName = userForRegisterDto.FirstName,
                 LastName = userForRegisterDto.LastName,
+                Email = userForRegisterDto.Email,
                 Password = userForRegisterDto.Password,
                 SecurityQuestionId = question.Id,
                 SecurityQuestionAnswer = userSecurityQuestionDto.SecurityQuestionAnswer,
@@ -88,7 +88,7 @@ namespace Business.Concrete
 
         public IResult UserExists(string email)
         {
-            // burası düzeltilecek.
+            
             var userExist = _userService.GetByMail(email);
             if (userExist == null)
             {
@@ -121,6 +121,39 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        public IDataResult<string> GetAuthorities(UserAuthoritiesDto userAuthoritiesDto)
+        {
+            var result = "";
+            if (userAuthoritiesDto.Authorities == null)
+            {
+                return new ErrorDataResult<string>();
+            }
+            foreach (var authority in userAuthoritiesDto.Authorities)
+            {
+                result += authority.AuthorityName + ",";
+            }
+            return new SuccessDataResult<string>(result, Messages.AuthorityGeted);
+        }
+
+        public IDataResult<string> UserAuthorityRoute(string authorities)
+        {
+            if (authorities.Contains("Admin"))
+            {
+                return new SuccessDataResult<string>("~/Admin/Dashboard", Messages.AuthorityGeted);
+            }
+            return new ErrorDataResult<string>("~/Site/SiteBook", Messages.AuthorityGeted);
+        }
+
+
+        public IResult CheckUserAuthority(string authorities)
+        {
+            if (authorities.Contains("Admin"))
+            {
+                return new SuccessResult();
+            }
+            return new ErrorResult();
+        }
+
         private IResult SecurityAnswer(User user, string securityAnswer)
         {
             if (user.SecurityQuestionAnswer != securityAnswer)
@@ -138,5 +171,7 @@ namespace Business.Concrete
             }
             return new SuccessResult();
         }
+
+
     }
 }

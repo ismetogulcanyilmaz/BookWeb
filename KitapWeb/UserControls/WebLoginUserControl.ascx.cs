@@ -24,19 +24,16 @@ namespace KitapWeb.UserControls
             userForLoginDto.Password = tbx_Password.Text;
 
             var userLogin = _authService.Login(userForLoginDto);
-             
+
             if (userLogin.Success)
             {
                 var userAuthorities = _authService.GetUserAuthority(userLogin.Data).Data;
-                string authorities = "";
-
-                foreach (var authority in userAuthorities.Authorities)
-                {
-                    authorities += authority.AuthorityName + ",";
-                }
+                var authorities = _authService.GetAuthorities(userAuthorities).Data;
+                var routeUser = _authService.UserAuthorityRoute(authorities).Data;
 
                 Session["Authorities"] = authorities;
-                Response.Redirect("/Site/SiteBook");
+                Session["UserName"] = userAuthorities.User.FirstName + " " + userAuthorities.User.LastName;
+                Response.Redirect(routeUser);
             }
             Lbl_LoginPage.Text = userLogin.Message;
         }
