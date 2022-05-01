@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapWeb", "KitapWeb\KitapWeb.csproj", "{3C3F9C6B-09F0-4BB7-90BF-3B7AA68AE66A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KitapWebAPI", "KitapWebAPI\KitapWebAPI.csproj", "{16886B5C-7D98-4E17-BBCC-3B04119F03CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3C3F9C6B-09F0-4BB7-90BF-3B7AA68AE66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C3F9C6B-09F0-4BB7-90BF-3B7AA68AE66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C3F9C6B-09F0-4BB7-90BF-3B7AA68AE66A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16886B5C-7D98-4E17-BBCC-3B04119F03CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16886B5C-7D98-4E17-BBCC-3B04119F03CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16886B5C-7D98-4E17-BBCC-3B04119F03CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16886B5C-7D98-4E17-BBCC-3B04119F03CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
