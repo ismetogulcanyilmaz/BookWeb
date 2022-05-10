@@ -44,9 +44,11 @@
     <Compile Include="Concrete\Book.cs" />
     <Compile Include="Concrete\BookCategory.cs" />
     <Compile Include="Concrete\BookOrder.cs" />
+    <Compile Include="Concrete\Cart.cs" />
     <Compile Include="Concrete\MenuAdmin.cs" />
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="DTOs\AuthorityDto.cs" />
+    <Compile Include="DTOs\BookDto.cs" />
     <Compile Include="DTOs\UserAuthoritiesDto.cs" />
     <Compile Include="DTOs\UserNewPasswordDto.cs" />
     <Compile Include="DTOs\UserSecurityQuestionDto.cs" />

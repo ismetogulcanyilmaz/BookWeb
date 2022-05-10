@@ -59,8 +59,10 @@ namespace KitapWeb.AdminWeb
             book.Id = Convert.ToInt32(tbx_UpdateId.Text);
             book.BookCategoryId = Convert.ToInt32(tbx_UpdateCategoryId.Text);
             book.Name = tbx_UpdateName.Text;
-            book.UnitPrice = Convert.ToInt16(tbx_UpdateUnitPrice.Text);
+            book.UnitPrice = Convert.ToDecimal(tbx_UpdateUnitPrice.Text);
             book.UnitsInStock = Convert.ToInt16(tbx_UpdateUnitsInStock.Text);
+            book.BooksPage = Convert.ToInt32(tbx_UpdateBooksPage.Text);
+            book.WriterName = tbx_UpdateWriterName.Text;
 
             _bookService.Update(book);
             GetAll();
@@ -71,8 +73,10 @@ namespace KitapWeb.AdminWeb
             Book book = new Book();
             book.BookCategoryId = Convert.ToInt32(tbx_AddBookCategoryId.Text);
             book.Name = tbx_AddName.Text;
-            book.UnitPrice = Convert.ToInt16(tbx_AddUnitPrice.Text);
+            book.UnitPrice = Convert.ToDecimal(tbx_AddUnitPrice.Text);
             book.UnitsInStock = Convert.ToInt16(tbx_AddUnitsInStock.Text);
+            book.BooksPage = Convert.ToInt32(tbx_AddBooksPage.Text);
+            book.WriterName = tbx_AddWriterName.Text;
 
             _bookService.Add(book);
             GetAll();
