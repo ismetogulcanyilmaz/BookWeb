@@ -14,11 +14,12 @@ namespace Business.Concrete
 {
     public class CustomerManager : ICustomerService
     {
-        ICustomerDal _customerDal;
+        private ICustomerDal _customerDal;
         public CustomerManager()
         {
             _customerDal = new EfCustomerDal();
         }
+
         public IResult Add(Customer customer)
         {
             _customerDal.Add(customer);
@@ -33,12 +34,32 @@ namespace Business.Concrete
 
         public IDataResult<List<Customer>> GetAll()
         {
-            return new SuccessDataResult<List<Customer>>(_customerDal.GetAll(), Messages.CustomersListed);
+            var result = _customerDal.GetAll();
+            if (result == null)
+            {
+                return new ErrorDataResult<List<Customer>>();
+            }
+            return new SuccessDataResult<List<Customer>>(result, Messages.CustomersListed);
         }
 
         public IDataResult<Customer> GetById(int id)
         {
-            return new SuccessDataResult<Customer>(_customerDal.Get(c => c.Id == id), Messages.CustomerGeted);
+            var result = _customerDal.Get(c => c.Id == id);
+            if (result == null)
+            {
+                return new ErrorDataResult<Customer>();
+            }
+            return new SuccessDataResult<Customer>(result, Messages.CustomerGeted);
+        }
+
+        public IDataResult<Customer> GetByUserId(int userId)
+        {
+            var result = _customerDal.Get(c => c.UserId == userId);
+            if (result == null)
+            {
+                return new ErrorDataResult<Customer>();
+            }
+            return new SuccessDataResult<Customer>(result, Messages.CustomerGeted);
         }
 
         public IResult Update(Customer customer)

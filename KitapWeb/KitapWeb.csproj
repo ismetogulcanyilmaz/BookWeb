@@ -122,6 +122,7 @@
     <Content Include="assets\js\morris\morris-0.4.3.min.css" />
     <Content Include="assets\js\morris\morris.js" />
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="CartForm\CartWebForm.aspx" />
     <Content Include="css\style.css" />
     <Content Include="ForgotPassword\ForgotPassword.aspx" />
     <Content Include="ForgotPassword\NewPassword.aspx" />
@@ -239,6 +240,20 @@
     </Compile>
     <Compile Include="AdminWeb\AdminUserAuthority.aspx.designer.cs">
       <DependentUpon>AdminUserAuthority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CartForm\CartForm.Master.cs">
+      <DependentUpon>CartForm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartForm\CartForm.Master.designer.cs">
+      <DependentUpon>CartForm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CartForm\CartWebForm.aspx.cs">
+      <DependentUpon>CartWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CartForm\CartWebForm.aspx.designer.cs">
+      <DependentUpon>CartWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForgotPassword\ForgotPassword.aspx.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
@@ -361,6 +376,7 @@
     <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="AdminWeb\assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="CartForm\CartForm.Master" />
     <None Include="packages.config" />
     <Content Include="Site\Site.Master" />
     <None Include="Web.Debug.config">

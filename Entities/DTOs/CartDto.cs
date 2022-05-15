@@ -5,13 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Concrete
+namespace Entities.DTOs
 {
-    public class BookOrder : IEntity
+    public class CartDto :IDto
     {
-        public int Id { get; set; }
-        public int CustomerId { get; set; }
+        public int CartId { get; set; }
         public int BookId { get; set; }
+        public string UserName { get; set; }
+        public string BookName { get; set; }
+        public decimal BookUnitPrice { get; set; }
         public Int16 Quantity { get; set; }
     }
 }

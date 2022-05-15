@@ -49,6 +49,7 @@
     <Compile Include="Concrete\Customer.cs" />
     <Compile Include="DTOs\AuthorityDto.cs" />
     <Compile Include="DTOs\BookDto.cs" />
+    <Compile Include="DTOs\CartDto.cs" />
     <Compile Include="DTOs\UserAuthoritiesDto.cs" />
     <Compile Include="DTOs\UserNewPasswordDto.cs" />
     <Compile Include="DTOs\UserSecurityQuestionDto.cs" />
