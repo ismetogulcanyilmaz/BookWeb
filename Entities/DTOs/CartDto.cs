@@ -15,5 +15,6 @@ namespace Entities.DTOs
         public string BookName { get; set; }
         public decimal BookUnitPrice { get; set; }
         public Int16 Quantity { get; set; }
+        public string Photo { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
 using Core.Entities.Concrete;
+using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
@@ -41,6 +42,7 @@ namespace KitapWeb.UserControls
         }
 
         IAuthService _authService = new AuthManager();
+        ICustomerService _customerService = new CustomerManager();
 
         ISecurityQuestionService _securityQuestionService = new SecurityQuestionManager();
 
@@ -65,6 +67,19 @@ namespace KitapWeb.UserControls
             userAuthority.UserId = result.Data.Id; 
             
             _authService.AddUserAuthority(userAuthority);
+
+            Customer customer = new Customer
+            {
+                UserId = result.Data.Id,
+                FirstName = tbx_FirstName.Text,
+                LastName = tbx_LastName.Text,
+                CityName = tbx_CityName.Text,
+                Address = tbx_Address.Text,
+                PhoneNumber = tbx_PhoneNumber.Text
+            };
+
+            _customerService.Add(customer);
+
 
             if (result.Success)
             {

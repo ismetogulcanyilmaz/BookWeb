@@ -16,5 +16,6 @@ namespace Entities.DTOs
         public Int16 UnitsInStock { get; set; }
         public string WriterName { get; set; }
         public int BooksPage { get; set; }
+        public string Photo { get; set; }
     }
 }

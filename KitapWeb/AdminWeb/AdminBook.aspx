@@ -15,6 +15,7 @@
             <asp:BoundField DataField="UnitsInStock" HeaderText="UnitsInStock"  />
             <asp:BoundField DataField="WriterName" HeaderText="WriterName"  />
             <asp:BoundField DataField="BooksPage" HeaderText="BooksPage"  />
+            <asp:BoundField DataField="Photo" HeaderText="Photo"  />
 
             <asp:TemplateField>
                 <ItemTemplate>
@@ -47,6 +48,9 @@
 
             <label for="exampleFormControlInput1">BooksPage</label>
             <asp:TextBox ID="tbx_AddBooksPage" CssClass="form-control" runat="server"></asp:TextBox>
+              
+            <label for="exampleFormControlInput1">Photo</label>
+            <asp:TextBox ID="tbx_AddPhoto" CssClass="form-control" runat="server"></asp:TextBox>
 
             <asp:Button ID="btn_Add" runat="server" CssClass="btn btn-success" Text="Add" OnClick="btn_Add_Click" />
           </div>
@@ -72,6 +76,9 @@
             
             <label for="exampleFormControlInput1">WriterName</label>
             <asp:TextBox ID="tbx_UpdateWriterName" CssClass="form-control" runat="server"></asp:TextBox>
+            
+            <label for="exampleFormControlInput1">Photo</label>
+            <asp:TextBox ID="tbx_UpdatePhoto" CssClass="form-control" runat="server"></asp:TextBox>
 
             <asp:Button ID="btn_Update" runat="server" CssClass="btn btn-warning" Text="Update" OnClick="btn_Update_Click" />
           </div>

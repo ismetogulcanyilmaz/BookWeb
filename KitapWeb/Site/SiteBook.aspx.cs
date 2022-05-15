@@ -38,7 +38,9 @@ namespace KitapWeb.Site
             Cart cart = new Cart();
             cart.BookId= bookId;
             cart.UserId=userId;
+            cart.Quantity = 1;
             _cartService.Add(cart);
+
         }
     }
 }

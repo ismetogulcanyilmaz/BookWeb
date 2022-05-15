@@ -50,33 +50,32 @@
 
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="Grd_BookDtos_PageIndexChanging" PagerStyle-CssClass="GridPager span"  Width="545%" PageSize="1" >
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowPaging="true" OnPageIndexChanging="GridView1_PageIndexChanging1" PagerStyle-CssClass="GridPager span"  Width="545%" PageSize="1" >
                 <Columns>
                      
-                    <asp:BoundField DataField="Id"  ItemStyle-CssClass="hiddencol" />
-                    <asp:BoundField DataField="BookCategoryName" ItemStyle-CssClass="hiddencol"  />
-                    <asp:BoundField DataField="Name"  ItemStyle-CssClass="hiddencol" />
-                    <asp:BoundField DataField="UnitPrice" ItemStyle-CssClass="hiddencol"  />
-                    <asp:BoundField DataField="UnitsInStock" ItemStyle-CssClass="hiddencol"  />
-                    <asp:BoundField DataField="BooksPage" ItemStyle-CssClass="hiddencol"  />
-                    <asp:BoundField DataField="WriterName" ItemStyle-CssClass="hiddencol"  />
+
+                    <asp:BoundField DataField="BookId" ItemStyle-CssClass="hiddencol"  />
+                    <asp:BoundField DataField="CartId" ItemStyle-CssClass="hiddencol"  />
+                    <asp:BoundField DataField="BookName"  ItemStyle-CssClass="hiddencol" />
+                    <asp:BoundField DataField="Quantity" ItemStyle-CssClass="hiddencol"  />
+                    <asp:BoundField DataField="UserName"  ItemStyle-CssClass="hiddencol" />
+                    <asp:BoundField DataField="BookUnitPrice" ItemStyle-CssClass="hiddencol"  />
+                    <asp:BoundField DataField="Photo" ItemStyle-CssClass="hiddencol"  />
+
+
               
                     <asp:TemplateField>
                         <ItemTemplate>
 
                                         <div class="swiper-slide box">
                                             <div class="image">
-                                                <img src="/image/book-1.png" alt="">
+                                                <img src="/image/<%#Eval("Photo")%>" alt="">
                                             </div>
                                             <div class="content">
-                                                <h3><%#Eval("Name")%></h3>
-                                                <h3><%#Eval("BookCategoryName")%></h3>
-                                                <div class="price"><%#Eval("UnitPrice")%> TL</div>  
-                                                <h3><%#Eval("UnitsInStock")%> Adet</h3>
-                                                <h3><%#Eval("BooksPage")%> Sayfa</h3>
-                                                <h3><%#Eval("WriterName")%></h3>
+                                                <h3><%#Eval("BookName")%></h3>
+                                                <div class="price"><%#Eval("BookUnitPrice")%> TL</div>
                                                 <h3><%#Eval("Quantity")%></h3>
-                                                <asp:LinkButton ID="Link_AddToCart" CssClass="btn" Width="100%" OnCommand="Link_AddToCart_Command" CommandArgument='<%#Eval("Id")%>' runat="server">AddToCart</asp:LinkButton>
+                                                <asp:LinkButton ID="Link_DeleteToCart" CssClass="btn" Width="100%" OnCommand="Link_DeleteToCart_Command" CommandArgument='<%#Eval("BookId")%>' runat="server">DeleteToCart</asp:LinkButton>
                                             </div>
                                             </div>
                         </ItemTemplate> 
@@ -84,6 +83,8 @@
 
                 </Columns>
             </asp:GridView>
+            <asp:Label ID="lbl_TotalPrice" runat="server" Text=""></asp:Label>
+            <asp:LinkButton ID="lnk_BookOrder" CssClass="btn" Width="100%" OnClick="lnk_BookOrder_Click" runat="server">Order</asp:LinkButton>
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>

@@ -41,7 +41,7 @@ namespace KitapWeb.CartForm
             GridView1.DataSource = GetCarts();
             GridView1.DataBind();
 
-            lbl_TotalPrice.Text = "TotalPrice: " + TotalPrice().ToString() + "$";
+            lbl_TotalPrice.Text = "TotalPrice: " + TotalPrice().ToString() + "TL";
         }
 
         public List<CartDto> GetCarts()
@@ -76,16 +76,10 @@ namespace KitapWeb.CartForm
 
         protected void Lnk_Cart_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Cart");
+            Response.Redirect("~/CartForm/Cart");
         }
 
-        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            GridView1.PageIndex = e.NewPageIndex;
-            GridView1.DataBind();
-        }
-
-        protected void Lnk_DeleteToCart_Command(object sender, CommandEventArgs e)
+        protected void Link_DeleteToCart_Command(object sender, CommandEventArgs e)
         {
             var bookId = Convert.ToInt32(e.CommandArgument);
 
@@ -95,10 +89,10 @@ namespace KitapWeb.CartForm
             cart.Quantity = 1;
 
             _cartService.CartDelete(cart);
-            Response.Redirect("~/Cart");
+            Response.Redirect("~/CartForm/Cart");
         }
 
-        protected void Lnk_Order_Click(object sender, EventArgs e)
+        protected void lnk_BookOrder_Click(object sender, EventArgs e)
         {
             var userCarts = GetCarts();
             var userId = Convert.ToInt32(HttpContext.Current.Session["UserId"]);
@@ -119,7 +113,13 @@ namespace KitapWeb.CartForm
                 var cart = _cartService.GetById(cartItem.CartId).Data;
                 _cartService.Delete(cart);
             }
-            Response.Redirect("~/WebPage");
+            Response.Redirect("~/Site/SiteBook");
+        }
+
+        protected void GridView1_PageIndexChanging1(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            GridView1.DataBind();
         }
     }
 }

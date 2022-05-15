@@ -28,6 +28,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  UnitPrice = book.UnitPrice,
                                  UnitsInStock = book.UnitsInStock,
                                  WriterName = book.WriterName,
+                                 Photo=book.Photo,
 
                              };
                 return result.ToList();

@@ -24,6 +24,33 @@ namespace KitapWeb.UserControls
         protected global::System.Web.UI.WebControls.TextBox tbx_FirstName;
 
         /// <summary>
+        /// tbx_CityName denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_CityName;
+
+        /// <summary>
+        /// tbx_PhoneNumber denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_PhoneNumber;
+
+        /// <summary>
+        /// tbx_Address denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_Address;
+
+        /// <summary>
         /// tbx_LastName denetimi.
         /// </summary>
         /// <remarks>

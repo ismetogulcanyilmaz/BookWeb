@@ -8,6 +8,18 @@
             <span class="fa fa-user"></span>
               <asp:TextBox ID="tbx_FirstName" placeholder="FirstName" runat="server"></asp:TextBox>
           </div>
+                       <div class="field"> 
+            <span class="fa fa-user"></span>
+              <asp:TextBox ID="tbx_CityName" placeholder="CityName" runat="server"></asp:TextBox>
+          </div>
+                       <div class="field"> 
+            <span class="fa fa-user"></span>
+              <asp:TextBox ID="tbx_PhoneNumber" placeholder="PhoneNumber" runat="server"></asp:TextBox>
+          </div>
+                       <div class="field"> 
+            <span class="fa fa-user"></span>
+              <asp:TextBox ID="tbx_Address" placeholder="Address" runat="server"></asp:TextBox>
+          </div>
                 <div class="field"> 
             <span class="fa fa-user"></span>
               <asp:TextBox ID="tbx_LastName" placeholder="LastName" runat="server"></asp:TextBox>

@@ -96,6 +96,15 @@ namespace KitapWeb.AdminWeb
         protected global::System.Web.UI.WebControls.TextBox tbx_AddBooksPage;
 
         /// <summary>
+        /// tbx_AddPhoto denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_AddPhoto;
+
+        /// <summary>
         /// btn_Add denetimi.
         /// </summary>
         /// <remarks>
@@ -166,6 +175,15 @@ namespace KitapWeb.AdminWeb
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbx_UpdateWriterName;
+
+        /// <summary>
+        /// tbx_UpdatePhoto denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_UpdatePhoto;
 
         /// <summary>
         /// btn_Update denetimi.

@@ -33,6 +33,7 @@ namespace KitapWeb
             route.MapPageRoute("UserBook", "Site/SiteBook", "~/Site/SiteBook.aspx");
             route.MapPageRoute("UserBookCategory", "Site/SiteBookCategory", "~/Site/SiteBookCategory.aspx");
             route.MapPageRoute("UserBookOrder", "Site/SiteBookOrder", "~/Site/SiteBookOrder.aspx");
+            route.MapPageRoute("Cart", "CartForm/Cart", "~/CartForm/CartWebForm.aspx");
         }
 
 

@@ -62,13 +62,15 @@
                     <asp:BoundField DataField="UnitsInStock" ItemStyle-CssClass="hiddencol"  />
                     <asp:BoundField DataField="BooksPage" ItemStyle-CssClass="hiddencol"  />
                     <asp:BoundField DataField="WriterName" ItemStyle-CssClass="hiddencol"  />
+                    <asp:BoundField DataField="Photo" ItemStyle-CssClass="hiddencol"  />
+
               
                     <asp:TemplateField>
                         <ItemTemplate>
 
                                         <div class="swiper-slide box">
                                             <div class="image">
-                                                <img src="/image/book-1.png" alt="">
+                                                <img src="/image/<%#Eval("Photo")%>" alt="">
                                             </div>
                                             <div class="content">
                                                 <h3><%#Eval("Name")%></h3>
