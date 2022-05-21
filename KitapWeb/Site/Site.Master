@@ -27,10 +27,6 @@
 
         <a href="#" class="logo"> <i class="fas fa-book"></i> Book Store </a>
 
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="arama yazınız" id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
 
         <div class="icons">
             <div id="search-btn" class="fas fa-search"></div>
@@ -115,7 +111,7 @@
 
 <section class="featured" id="featured">
 
-    <h1 class="heading"> <span>featured books</span> </h1>
+    <h1 class="heading"> <span>Kitaplar</span> </h1>
 
     <div class="swiper featured-slider">
 
@@ -146,7 +142,7 @@
 
 <section class="reviews" id="reviews">
 
-    <h1 class="heading"> <span>client's reviews</span> </h1>
+    <h1 class="heading"> <span>Yorumlar</span> </h1>
 
     <div class="swiper reviews-slider">
 
@@ -161,7 +157,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star"></i>
                 </div>
             </div>
 
@@ -177,7 +173,7 @@
 
 <section class="blogs" id="blogs">
 
-    <h1 class="heading"> <span>our blogs</span> </h1>
+    <h1 class="heading"> <span>Bloglar</span> </h1>
 
     <div class="swiper blogs-slider">
 
@@ -190,7 +186,7 @@
                 <div class="content">
                     <h3>Rafların Arasında</h3>
                     <p>2010'dan bu yana güncel olan kitap yorum bloğu bir çok türü içind barındıran ve aynı zamanda konuk yazarlarında görüşlerini bildirdikleri bir blog.. Takip etmekte fayda var.</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">Okumak için tıklayınız</a>
                 </div>
             </div>
 
@@ -203,31 +199,6 @@
 <!-- blogs section ends -->
 
 <!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>our locations</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> Turkey </a>
-        </div>
-
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Ev </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Kitaplar </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Yorumlar </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i> Blog </a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +905467282497 </a>
-            <a href="#"> <i class="fas fa-envelope"></i>ismetogulcanyilmaz@gmail.com</a>
-        </div>
-        
-    </div>
 
 <!-- footer section ends -->
 

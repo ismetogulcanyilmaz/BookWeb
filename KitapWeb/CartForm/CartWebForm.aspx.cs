@@ -62,6 +62,10 @@ namespace KitapWeb.CartForm
         public decimal TotalPrice()
         {
             decimal price = 0;
+            if (GetCarts()==null)
+            {
+                return 0;
+            }
             foreach (var cartItem in GetCarts())
             {
                 price += cartItem.BookUnitPrice * cartItem.Quantity;
